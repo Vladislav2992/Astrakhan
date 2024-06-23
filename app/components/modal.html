@@ -1,0 +1,27 @@
+<div class="modal" id="modal-form">
+    <div class="overlay close-modal"></div>
+        <div class="modal__inner">
+            <button class="close-modal close-modal-btn">
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.5363 2.70292C19.1546 2.08459 19.1546 1.08208 18.5363 0.463748C17.9179 -0.154583 16.9154 -0.154583 16.2971 0.463748L9.5 7.26083L2.70292 0.463749C2.08459 -0.154581 1.08208 -0.154581 0.463748 0.463749C-0.154583 1.08208 -0.154583 2.08459 0.463748 2.70292L7.26083 9.5L0.463748 16.2971C-0.154583 16.9154 -0.154583 17.9179 0.463748 18.5363C1.08208 19.1546 2.08459 19.1546 2.70292 18.5363L9.5 11.7392L16.2971 18.5363C16.9154 19.1546 17.9179 19.1546 18.5363 18.5363C19.1546 17.9179 19.1546 16.9154 18.5363 16.2971L11.7392 9.5L18.5363 2.70292Z" fill="#122847"/>
+                </svg>                      
+            </button>
+            <form class="modal__form">
+               <div class="modal__form-inner">
+                <h2 class="form__title">Оставьте Ваши контактные данные и мы с Вами свяжемся в ближайшее время!</h2>
+                <div class="input-wrapper">
+                    <input type="text" class="form__input" name="name" required>
+                    <label class="form__label">Имя</label>
+                </div>
+
+                <div class="input-wrapper">
+                    <input type="tel" class="form__input" name="phone" required>
+                    <label class="form__label">Телефон</label>
+                </div>
+                <span class="form__agree">Нажимая кнопку "Отправить", Вы соглашаетесь с <a href="#!">Политикой конфиденциальности</a> </span>
+                <button class="btn send-form-btn">Отправить</button>
+               </div>               
+               
+            </form>
+        </div>
+</div>

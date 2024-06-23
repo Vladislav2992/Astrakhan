@@ -1,0 +1,52 @@
+@import 'vars'
+.services
+    padding: 50px 0
+    background-repeat: no-repeat
+    background-size: cover
+    .btn
+        margin: 0 auto 40px auto
+        text-align: center
+.services__title
+    color: $accent
+    font-weight: 700
+    font-style: italic
+    font-size: 28px
+    text-align: center
+    margin-bottom: 50px
+.services__list
+    color: $white
+    text-transform: uppercase
+    font-weight: 700
+    font-style: italic
+    font-size: 20px
+    display: grid
+    grid-template-columns: auto auto 
+
+.service
+    margin-bottom: 20px
+    &:nth-last-child(2n)
+        text-align: right
+.events
+    color: $white
+    text-transform: uppercase
+    font-weight: 700
+    font-style: italic
+    font-size: 20px 
+    text-align: center
+    line-height: 150%
+.events__title
+    margin-bottom: 20px
+    text-align: center
+.events__list
+    display: flex
+    flex-direction: column
+    gap: 15px
+    text-align: center
+@media(max-width: 970px)
+    .services__list
+        grid-template-columns: 1fr
+    .service
+        margin-bottom: 25px
+        text-align: center
+        &:nth-last-child(2n)
+            text-align: center

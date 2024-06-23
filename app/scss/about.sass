@@ -1,0 +1,65 @@
+@import 'vars'
+.about
+    .container
+        position: relative
+    .decor
+        position: absolute
+        transform: rotate(64deg)
+        left: -68%
+        top: 0
+.about__wrapper
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    gap: 20px
+
+.about__item-title
+    font-size: clamp(18px, 3vw, 20px)
+    font-weight: 700
+    font-style: italic
+    margin-bottom: 15px
+
+.about__item
+    p
+        margin-bottom: 22px
+        line-height: 124%
+
+    &:nth-last-child(2)
+        color: $main
+        position: relative
+        z-index: 1
+        &::before
+            content: ''
+            position: absolute
+            width: 108%
+            height: 105%
+            top: -7%
+            left: -7%
+            background: $accent
+            z-index: -1
+
+@media(max-width:1200px)
+    .about .decor
+        display: none
+
+@media(max-width:1024px)
+    .about__wrapper
+        grid-template-columns: repeat(2, 1fr)
+    .about__item
+        p
+            margin-bottom: 10px
+        &:nth-child(4)
+            color: $main
+            position: relative
+            z-index: 1
+            &::before
+                content: ''
+                position: absolute
+                width: 108%
+                height: 105%
+                top: -7%
+                left: -7%
+                background: $accent
+                z-index: -1
+@media(max-width:580px)
+    .about__wrapper
+        grid-template-columns: 1fr

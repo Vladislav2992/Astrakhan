@@ -1,0 +1,36 @@
+@import 'vars'
+.hero
+    height: calc(100vh - 81px)
+    background-size: cover
+    background-position: center
+    margin-top: 81px
+    color: $white
+
+    .container
+        height: 100%
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        justify-content: center
+        gap: 10vh
+.main__title
+    font-size: clamp(36px, 10vw, 64px)
+    font-weight: 700
+    font-style: italic
+    
+.hero__wrapper
+    font-size: clamp(20px, 5vw, 32px)
+    font-weight: 700    
+    font-style: italic
+    text-transform: uppercase
+    display: flex
+    flex-direction: column
+    gap: 3vh
+    p
+        line-height: 125%
+
+@media(max-width:1024px)
+    .hero
+        margin-top: 67px
+        min-height: 500px
+        height: calc(100vh - 67px)

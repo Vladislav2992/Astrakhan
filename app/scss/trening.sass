@@ -1,0 +1,76 @@
+@import 'vars'
+
+.training
+    .section__devider
+        margin-bottom: clamp(40px, 19vw, 100px)
+.training__description
+    margin-bottom: 20px
+
+.training__article
+    display: grid
+    grid-template-columns: 7fr 5fr
+    gap: 20px
+.training__article-text
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    gap: 10px
+    line-height: 130%
+.training__article-title
+    text-transform: uppercase
+    font-weight: 700
+    font-style: italic
+.training__type
+    display: grid
+    grid-template-columns: 7fr 5fr
+    gap: 20px
+    align-items: center
+    margin-bottom: 50px
+    position: relative
+
+    &:nth-child(1)        
+        &::before
+            content: ''
+            position: absolute
+            width: 708px
+            height: 1003px
+            background: url('../images/decor.svg') no-repeat
+            transform: rotate(-124deg)
+            top: -65%
+            left: -21% 
+            z-index: -1
+    &:nth-child(3)        
+        &::before
+            content: ''
+            position: absolute
+            width: 708px
+            height: 1003px
+            background: url('../images/decor.svg') no-repeat
+            transform: rotate(64deg)
+            top: -65%
+            right: -21% 
+            z-index: -1
+.training__type-inner
+    display: flex
+    flex-direction: column
+    gap: 20px
+
+@media(max-width: 1200px)
+    .training__type:nth-child(1)::before,
+    .training__type:nth-child(3)::before
+        content: none
+@media(max-width: 800px)
+    .training__article
+        grid-template-columns: 1fr
+@media(max-width: 700px)
+    .training__type
+        grid-template-columns: 1fr
+
+        &:nth-last-child(2n)
+            display: flex
+            flex-direction: column
+            
+            .training__img
+                order: 2
+            .training__type-inner
+                order: 1

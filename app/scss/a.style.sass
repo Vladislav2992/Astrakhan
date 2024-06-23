@@ -1,0 +1,62 @@
+@import 'vars'
+html
+    scroll-behavior: smooth
+    scrollbar-gutter: stable
+
+body 
+    font-family: 'Commissioner', sans-serif
+    font-size: clamp(14px, 3vw, 16px)
+    color: #000
+    background: $white
+    overflow-x: clip
+    position: relative
+
+    &.disabled
+        overflow: hidden
+
+section
+    margin-bottom: clamp(40px, 19vw, 100px)
+
+a
+    color: inherit
+    text-decoration: none
+img
+    width: 100%
+.container
+    max-width: 1270px
+    padding: 0 15px
+    margin: 0 auto
+.section__title
+    color: $main
+    background: $accent
+    font-size: clamp(20px, 4vw, 24px)
+    font-weight: 700
+    font-style: italic
+    padding: 6px 19px
+    width: fit-content
+    margin-bottom: 40px
+    text-transform: uppercase
+
+.section__devider
+    width: 100%
+    background-image: url('../images/vector.svg')
+    height: 27px
+    margin-top: 30px
+.btn
+    display: block
+    color: $main
+    background: $accent
+    border-radius: 40px
+    font-size: clamp(17px, 4vw, 28px)
+    font-weight: 700
+    font-style: italic
+    padding: 10px 32px
+    border: none
+    outline: none
+    width: fit-content
+    cursor: pointer
+    transition: .3s
+    text-transform: uppercase
+    &:hover
+        color: $main-light
+        background: $accent-light

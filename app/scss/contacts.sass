@@ -1,0 +1,27 @@
+@import 'vars'
+.contacts
+    .container
+        display: grid
+        grid-template-columns: 5fr 7fr
+        gap: 20px
+    .section__title
+        margin-bottom: 16%
+.contacts__list
+    display: flex
+    flex-direction: column
+    gap: 10px
+    font-size: 20px
+    color: $main
+
+    li
+        display: flex
+        align-items: center
+        gap: 10px
+#map 
+    height: 50vh
+@media(max-width:950px)
+    .contacts
+        .container
+            grid-template-columns: 1fr
+        .section__title
+            margin-bottom: 40px

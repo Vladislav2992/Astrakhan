@@ -1,0 +1,61 @@
+@import 'vars'
+.coaches
+    .container
+        position: relative
+
+        .decor
+            position: absolute
+            transform: rotate(-124deg)
+            left: -11%
+            bottom: -35%
+            z-index: -1
+.coaches__description
+    margin-bottom: 50px
+
+    p
+        margin-bottom: 20px
+
+.coaches__wrapper
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    gap: 20px
+
+.coach
+    padding: 30px
+    background: $accent
+    color: $main
+    border-radius: 10px
+    text-align: center
+    display: flex
+    flex-direction: column
+    .img
+        border-radius: 10px
+        overflow: hidden
+        margin-bottom: 20px
+        img
+            width: 100%
+.coach__name
+    font-size: 18px
+    font-weight: 700
+    font-style: italic
+    text-transform: uppercase
+    margin-bottom: 15px
+.coach__description
+    font-size: 16px
+    margin-bottom: 15px
+    display: inline-block
+.coach__quote
+    font-size: 16px
+    margin-bottom: 15px
+    font-weight: 700
+    margin-top: auto
+
+@media(max-width:1200px)
+    .coaches .decor
+        display: none
+@media(max-width:900px)
+    .coaches__wrapper
+        grid-template-columns: 1fr
+@media(max-width:500px)
+    .coach
+        padding: 15px
